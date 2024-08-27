@@ -5,8 +5,14 @@ definePageMeta({
 </script>
 
 <template>
-<div>
-  <h1>Home page</h1>
-  <p>Home page content</p>
+<div class="h-full w-full flex flex-row">
+<!--  Code section-->
+  <div class="bg-green-200 h-full w-[60%] border border-black">
+
+  </div>
+<!--  Preview/Output section-->
+  <div class="bg-yellow-200 h-full w-[40%] border border-y-black border-r-black">
+
+  </div>
 </div>
 </template>
