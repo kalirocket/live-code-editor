@@ -9,23 +9,17 @@ import "splitpanes/dist/splitpanes.css";
       class="flex h-12 shrink-0 items-center border-b border-[#333333] px-4"
     >
       <nav class="flex items-center gap-4">
-        <button
-          class="ring-offset-background focus-visible:ring-ring hover:bg-accent hover:text-accent-foreground inline-flex h-10 w-10 items-center justify-center whitespace-nowrap rounded-full text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
-        >
+        <InterfaceActionButton>
           <IconsMenu />
-        </button>
+        </InterfaceActionButton>
       </nav>
       <div class="ml-auto flex items-center gap-2">
-        <button
-          class="ring-offset-background focus-visible:ring-ring hover:bg-accent hover:text-accent-foreground inline-flex h-10 w-10 items-center justify-center whitespace-nowrap rounded-full text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
-        >
+        <InterfaceActionButton>
           <IconsSearch />
-        </button>
-        <button
-          class="ring-offset-background focus-visible:ring-ring hover:bg-accent hover:text-accent-foreground inline-flex h-10 w-10 items-center justify-center whitespace-nowrap rounded-full text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
-        >
+        </InterfaceActionButton>
+        <InterfaceActionButton>
           <IconsSettings />
-        </button>
+        </InterfaceActionButton>
         <InterfaceAvatar
           src="https://avatars.githubusercontent.com/u/61436567?v=4"
         >
@@ -46,24 +40,9 @@ import "splitpanes/dist/splitpanes.css";
                 <span class="font-medium">Project</span>
               </div>
               <div class="grid gap-2">
-                <button
-                  class="ring-offset-background focus-visible:ring-ring hover:text-accent-foreground inline-flex h-10 w-full items-center justify-start gap-2 whitespace-nowrap rounded-md px-2 py-2 text-sm font-medium transition-colors hover:bg-[#333333] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
-                >
-                  <IconsFile />
-                  <span class="truncate">index.html</span>
-                </button>
-                <button
-                  class="ring-offset-background focus-visible:ring-ring hover:text-accent-foreground inline-flex h-10 w-full items-center justify-start gap-2 whitespace-nowrap rounded-md px-2 py-2 text-sm font-medium transition-colors hover:bg-[#333333] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
-                >
-                  <IconsFile />
-                  <span class="truncate">index.js</span>
-                </button>
-                <button
-                  class="ring-offset-background focus-visible:ring-ring hover:text-accent-foreground inline-flex h-10 w-full items-center justify-start gap-2 whitespace-nowrap rounded-md px-2 py-2 text-sm font-medium transition-colors hover:bg-[#333333] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
-                >
-                  <IconsFile />
-                  <span class="truncate">styles.css</span>
-                </button>
+                <InterfaceFileFolderButton type="file" name="index.html" />
+                <InterfaceFileFolderButton type="file" name="index.js" />
+                <InterfaceFileFolderButton type="file" name="style.css" />
               </div>
             </div>
           </div>
