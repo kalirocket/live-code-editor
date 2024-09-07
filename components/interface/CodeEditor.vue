@@ -35,7 +35,7 @@ import "splitpanes/dist/splitpanes.css";
     </header>
     <!--    main content-->
     <div class="flex flex-1">
-      <splitpanes class="default-theme" style="height: 100%; width: 100%">
+      <splitpanes style="height: 100%; width: 100%">
         <pane size="30%">
           <div
             class="h-full w-full shrink-0 overflow-auto border-r border-[#333333] bg-[#252526]"
@@ -158,3 +158,13 @@ import "splitpanes/dist/splitpanes.css";
     </div>
   </div>
 </template>
+<style>
+.splitpanes--vertical > .splitpanes__splitter {
+  min-width: 20px;
+  margin-left: -10px;
+}
+
+.splitpanes--horizontal > .splitpanes__splitter {
+  min-width: 20px;
+}
+</style>
