@@ -8,8 +8,8 @@ definePageMeta({
   <div class="flex h-full w-full flex-row">
     <InterfaceCodeEditor />
     <!--  Preview/Output section-->
-    <div
-      class="h-full w-[40%] border border-y-black border-r-black bg-yellow-200"
-    ></div>
+    <InterfaceSkeleton
+      class="h-full w-[40%] border-y border-r border-black"
+    ></InterfaceSkeleton>
   </div>
 </template>
