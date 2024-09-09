@@ -141,9 +141,11 @@ import "splitpanes/dist/splitpanes.css";
 .splitpanes--vertical > .splitpanes__splitter {
   min-width: 20px;
   margin-left: -10px;
+  cursor: ew-resize;
 }
 
 .splitpanes--horizontal > .splitpanes__splitter {
   min-width: 20px;
+  cursor: ns-resize;
 }
 </style>
